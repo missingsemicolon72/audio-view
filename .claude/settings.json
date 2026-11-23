@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "deny": [
+      "Bash(git commit *)", "Bash(git * commit *)", "Bash(git push *)", "Bash(git * push *)",
+      "Bash(git tag *)", "Bash(git reset --hard *)", "Bash(git rebase *)", "Bash(git filter-branch *)",
+      "PowerShell(git commit *)", "PowerShell(git * commit *)", "PowerShell(git push *)", "PowerShell(git * push *)",
+      "PowerShell(git tag *)", "PowerShell(git reset --hard *)", "PowerShell(git rebase *)", "PowerShell(git filter-branch *)",
+      "PowerShell(Set-AudioDevice *)", "PowerShell(nircmd *)", "PowerShell(svcl *)", "PowerShell(SoundVolumeView *)",
+      "Read(./.env)", "Read(./.env.*)", "Read(./local-corpus/**)"
+    ],
+    "ask": [
+      "Bash(git clean *)", "Bash(git checkout -- *)", "Bash(git restore *)", "Bash(git stash drop *)", "Bash(git stash clear *)", "Bash(git branch -D *)",
+      "PowerShell(git clean *)", "PowerShell(git checkout -- *)", "PowerShell(git restore *)", "PowerShell(git stash drop *)", "PowerShell(git stash clear *)", "PowerShell(git branch -D *)",
+      "Bash(rm *)", "Bash(rmdir *)", "PowerShell(Remove-Item *)",
+      "Bash(curl *)", "Bash(wget *)", "PowerShell(Invoke-WebRequest *)", "PowerShell(Invoke-RestMethod *)", "PowerShell(Start-BitsTransfer *)",
+      "Bash(npm * -g *)", "Bash(npm * --global *)", "Bash(npm update *)", "Bash(npx *)", "Bash(cargo install *)", "Bash(cargo update *)",
+      "PowerShell(npm * -g *)", "PowerShell(npm * --global *)", "PowerShell(npm update *)", "PowerShell(npx *)", "PowerShell(cargo install *)", "PowerShell(cargo update *)",
+      "Bash(winget install *)", "Bash(winget upgrade *)", "Bash(winget uninstall *)",
+      "PowerShell(winget install *)", "PowerShell(winget upgrade *)", "PowerShell(winget uninstall *)",
+      "Bash(rustup update *)", "Bash(rustup default *)", "Bash(rustup toolchain *)", "Bash(rustup target *)", "Bash(rustup component *)", "Bash(rustup self *)", "Bash(rustup override *)",
+      "PowerShell(rustup update *)", "PowerShell(rustup default *)", "PowerShell(rustup toolchain *)", "PowerShell(rustup target *)", "PowerShell(rustup component *)", "PowerShell(rustup self *)", "PowerShell(rustup override *)",
+      "PowerShell(*-Verb RunAs*)", "PowerShell(setx *)", "PowerShell(reg *)", "PowerShell(netsh *)", "PowerShell(New-NetFirewallRule *)",
+      "PowerShell(Set-ExecutionPolicy *)", "PowerShell(Set-ItemProperty *)", "PowerShell(New-ItemProperty *)",
+      "Edit(./CLAUDE.md)", "Edit(./.claude/**)", "Edit(./deny.toml)", "Edit(./clippy.toml)", "Edit(./.github/workflows/**)",
+      "Edit(./src-tauri/capabilities/**)", "Edit(./src-tauri/tauri.conf.json)"
+    ],
+    "allow": [
+      "Bash(cargo fmt *)", "Bash(cargo clippy *)", "Bash(cargo test *)", "Bash(cargo build *)", "Bash(cargo check *)", "Bash(cargo run *)",
+      "Bash(cargo bench *)", "Bash(cargo doc *)", "Bash(cargo deny *)", "Bash(cargo tree *)", "Bash(cargo metadata *)",
+      "Bash(cargo add *)", "Bash(cargo remove *)", "Bash(cargo new *)", "Bash(cargo tauri *)", "Bash(rustc *)",
+      "PowerShell(cargo fmt *)", "PowerShell(cargo clippy *)", "PowerShell(cargo test *)", "PowerShell(cargo build *)", "PowerShell(cargo check *)", "PowerShell(cargo run *)",
+      "PowerShell(cargo bench *)", "PowerShell(cargo doc *)", "PowerShell(cargo deny *)", "PowerShell(cargo tree *)", "PowerShell(cargo metadata *)",
+      "PowerShell(cargo add *)", "PowerShell(cargo remove *)", "PowerShell(cargo new *)", "PowerShell(cargo tauri *)", "PowerShell(rustc *)",
+      "Bash(rustup show *)", "Bash(rustup --version)", "PowerShell(rustup show *)", "PowerShell(rustup --version)",
+      "Bash(npm run *)", "Bash(npm test *)", "Bash(npm ci *)", "Bash(npm install *)", "Bash(npm i *)", "Bash(npm add *)", "Bash(npm uninstall *)",
+      "Bash(npm ls *)", "Bash(npm outdated *)", "Bash(npm audit *)", "Bash(npm view *)", "Bash(npm --prefix * run *)",
+      "PowerShell(npm run *)", "PowerShell(npm test *)", "PowerShell(npm ci *)", "PowerShell(npm install *)", "PowerShell(npm i *)", "PowerShell(npm add *)", "PowerShell(npm uninstall *)",
+      "PowerShell(npm ls *)", "PowerShell(npm outdated *)", "PowerShell(npm audit *)", "PowerShell(npm view *)", "PowerShell(npm --prefix * run *)",
+      "Bash(node scripts/*)", "Bash(node --version)", "PowerShell(node scripts/*)", "PowerShell(node --version)",
+      "Bash(git status *)", "Bash(git diff *)", "Bash(git log *)", "Bash(git show *)", "Bash(git ls-files *)", "Bash(git check-ignore *)", "Bash(git check-attr *)",
+      "Bash(git rev-parse *)", "Bash(git remote -v)", "Bash(git branch *)", "Bash(git ls-remote *)",
+      "PowerShell(git status *)", "PowerShell(git diff *)", "PowerShell(git log *)", "PowerShell(git show *)", "PowerShell(git ls-files *)", "PowerShell(git check-ignore *)", "PowerShell(git check-attr *)",
+      "PowerShell(git rev-parse *)", "PowerShell(git remote -v)", "PowerShell(git branch *)", "PowerShell(git ls-remote *)",
+      "PowerShell(winget search *)", "PowerShell(winget show *)", "PowerShell(winget list *)",
+      "PowerShell(Get-ChildItem *)", "PowerShell(Get-Content *)", "PowerShell(Get-Item *)", "PowerShell(Get-ItemProperty *)", "PowerShell(Get-Command *)",
+      "PowerShell(Get-CimInstance *)", "PowerShell(Get-Volume *)", "PowerShell(Get-PSDrive *)", "PowerShell(Get-Process *)", "PowerShell(Get-Counter *)",
+      "PowerShell(Get-FileHash *)", "PowerShell(Select-String *)", "PowerShell(Test-Path *)", "PowerShell(Measure-Object *)", "PowerShell(typeperf *)"
+    ]
+  }
+}
