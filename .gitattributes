@@ -1,0 +1,8 @@
+# Normalize line endings to LF in the repo and in the working tree, so rustfmt,
+# Prettier and ESLint see the same bytes on Windows and on the CI runner.
+* text=auto eol=lf
+
+*.png binary
+*.ico binary
+*.icns binary
+*.woff2 binary

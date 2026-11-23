@@ -1,0 +1,32 @@
+# --- Project-local data that must never be committed (CLAUDE.md G6) ---
+/local-corpus/
+/out/
+
+# --- Secrets (G8) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.p12
+*.key
+
+# --- Rust ---
+/target/
+**/*.rs.bk
+
+# --- Node / UI ---
+node_modules/
+/ui/dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# --- Claude Code: per-machine overrides only ---
+.claude/settings.local.json
+
+# --- OS / editor noise ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
